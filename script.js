@@ -1,11 +1,16 @@
 const container = document.querySelector('.container');
 
-function createGrid() {
-    for (let i = 1; i <= 256; i++) {
-        const square = document.createElement('div');
-        square.classList.add('square' + i);
-        container.appendChild(square);
+function createGrid(size) {
+    for (let i = 1; i <= size; i++) {
+        const row = document.createElement('div');
+        row.classList.add('row' + i);
+        for (let j = 1; j <= size; j++) {
+            const square = document.createElement('div');
+            square.classList.add('square' + j);
+            row.appendChild(square);
+        }
+        container.appendChild(row);
     }
 }
 
-createGrid();
+createGrid(16);
