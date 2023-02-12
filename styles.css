@@ -9,4 +9,13 @@
 
  .container {
     border: 8px solid black;
+    display: flex;
+    flex-wrap: wrap;
+ }
+
+ .container div {
+    width: 10px;
+    height: 10px;
+    
+    border: 1px solid red;
  }
