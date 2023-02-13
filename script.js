@@ -60,3 +60,11 @@ changeButton.addEventListener('click', userInput);
 
 const clearButton = document.querySelector('.clear');
 clearButton.addEventListener('click', clearGrid);
+
+/* const buttons = document.querySelectorAll('button');
+buttons.forEach(button => button.addEventListener('mouseenter', () => {
+    button.classList.add('buttonHover');
+})); */
+/* buttons.forEach(button => button.addEventListener('mouseleave', () => {
+    button.classList.remove('buttonHover');
+})); */

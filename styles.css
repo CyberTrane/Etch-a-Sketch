@@ -9,7 +9,7 @@ body {
 }
  
 header {
-   display: flex;
+   display: flex;   
    align-items: center;
    gap: 36px;
    color: #e3e3e3;
@@ -23,6 +23,13 @@ button {
    color: #e3e3e3;
    font-size: 16px;
    font-weight: bold;   
+   transition: 0.2s;
+}
+
+button:hover {
+   background-color: #e3e3e3;
+   color: #233142;
+   transform: scale(1.1);
 }
 
 .container {
