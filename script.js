@@ -35,8 +35,13 @@ function userInput() {
     
 }
 
-function colorGrid(e) {
+function colorGrid() {
     this.classList.add('coloring');
+}
+
+function clearGrid() {
+    const squares = document.querySelectorAll('.square');
+    squares.forEach(square => square.classList.remove('coloring'));
 }
 
 createGrid(16);
@@ -50,5 +55,8 @@ squares.forEach(square => square.addEventListener('mouseup', () => {
     squares.forEach(square => square.removeEventListener('mousemove', colorGrid));
 })); */
 
-const button = document.querySelector('button');
-button.addEventListener('click', userInput);
+const changeButton = document.querySelector('.change');
+changeButton.addEventListener('click', userInput);
+
+const clearButton = document.querySelector('.clear');
+clearButton.addEventListener('click', clearGrid);

@@ -22,7 +22,7 @@ button {
    background-color: #233142;
    color: #e3e3e3;
    font-size: 16px;
-   font-weight: bold;
+   font-weight: bold;   
 }
 
 .container {
@@ -41,5 +41,5 @@ button {
 }
 
 .coloring {
-   background-color: #455d7a /* #233142 */;
+   background-color: #455d7a
 }
