@@ -14,11 +14,16 @@ function createGrid(size) {
 }
 
 function colorGrid(e) {
-    this.classList.add('colored');
+    this.classList.add('coloring');
     
 }
 
 createGrid(16);
 
 const squares = Array.from(document.querySelectorAll('.square'));
-squares.forEach(square => square.addEventListener('mouseenter', colorGrid));
+squares.forEach(square => square.addEventListener('mousedown', () => {
+    squares.forEach(square => square.addEventListener('mouseover', colorGrid));
+}));
+squares.forEach(square => square.addEventListener('mouseup', () => {
+    squares.forEach(square => square.removeEventListener('mouseover', colorGrid));
+}));

@@ -6,9 +6,9 @@ body {
    align-items: center;
 }
  
-/* header {
-
-} */
+header {
+   display: flex;
+}
 
 .container {
    width: 650px;
@@ -29,6 +29,6 @@ body {
     
  }
 
- .colored {
+ .coloring {
    background-color: gray;
  }
