@@ -24,11 +24,10 @@ header {
    flex: auto;
 }
 
-.square {
-   border: 1px solid red;
-    
- }
+/* .square {
+   border: 1px solid red;  
+ } */
 
- .coloring {
-   background-color: gray;
- }
+.coloring {
+   background-color: black;
+}
