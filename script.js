@@ -20,6 +20,9 @@ function createGrid(size) {
 function userInput() {
     let input = prompt('Enter New Grid Size');
     while (true) {
+        if (input === null) {
+            break
+        }
         if (!(Number(input))) {
             input = prompt('Not a number, try again');
         }
